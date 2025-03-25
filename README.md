@@ -52,19 +52,19 @@ FP-Growth Consumer: Mines frequent patterns and generates association rules from
 Since streaming data is continuously flowing, we apply a sliding window to divide the data into fixed-size windows. This allows real-time frequent itemset mining without needing access to the full dataset, maintaining memory efficiency while capturing evolving patterns over time.
 
 ## Frequent Itemset Mining Algorithms:
-Apriori Algorithm
+### Apriori Algorithm
 Processes 'also_view' and 'also_buy' transactions in real-time.
 
 Collects data within sliding windows and runs the Apriori algorithm when the window size is reached.
 
 Identifies frequent itemsets based on a minimum support threshold.
 
-PCY Algorithm
+### PCY Algorithm
 Optimizes memory usage by hashing item pairs into buckets and counting their frequencies.
 
 Finds frequent items and candidate pairs from 'also_buy' data within the sliding window.
 
-FP-Growth Algorithm
+### FP-Growth Algorithm
 Builds an FP-tree from 'category' transactions in the sliding window.
 
 Mines frequent patterns and generates association rules efficiently.
